@@ -9,12 +9,12 @@ export default function Destination({ toggle, country, response }) {
           <IoArrowBackOutline className="back-button" onClick={toggle} />
         </div>
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-lg-6">
             <div className="left-banner">
               <img src="/assets/africa-01.webp" />
             </div>
           </div>
-          <div className="col-lg-7">
+          <div className="col-lg-6">
             <div className="right-banner">
               <ul className="first-ul">
                 <li className="flag-li">
