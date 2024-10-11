@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaLocationDot, FaMagnifyingGlass, FaSpinner } from "react-icons/fa6";
 import CountryList from "../CountryList";
 
-const DestinationSearch = ({ SelectCountry }) => {
+const DestinationSearch = ({ SelectCountry , toggle }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -57,6 +57,7 @@ const DestinationSearch = ({ SelectCountry }) => {
                 onClick={() => {
                   SelectCountry(country);
                   setSearchResults([]);
+                  toggle();
                   setSearchTerm("");
                 }}
               >

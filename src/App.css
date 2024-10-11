@@ -343,3 +343,158 @@ li {
   height: 15px;
   margin-right: 10px;
 }
+
+.destination-hero-sect {
+  padding: 10px 0px 50px 0px;
+  position: relative;
+}
+
+.destination-hero-sect .left-baner img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+ .right-baner ul.first-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 0 10px 10px;
+}
+
+body ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li.flag-li img{
+  width: 30px;
+  height: 15px;
+}
+
+li.flag-li img{
+  height: 35px;
+  vertical-align: middle;
+}
+
+li.flag-li p img{
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+}
+
+li.flag-li h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--clr-000000);
+}
+
+ul.first-ul li.flag-li p span {
+  text-decoration: underline;
+}
+
+
+
+ li.usd-li h3 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #E6485C;
+}
+
+li.usd-li h3 span {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  margin-left: -10px;
+}
+
+ ul.feature {
+  border: none;
+  margin: 30px 0 10px 10px ;
+}
+
+ .nav-link.active {
+  border: none;
+  background-color: #292B2E;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 40px 0;
+  width: 120px;
+  padding: 10px 10px 10px;
+}
+
+.tab-content ul {
+  padding-left: 20px;
+}
+
+ .tab-content ul li {
+  list-style-type: disc;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+ h2.choose {
+  font-size: 18px;
+  font-weight: 600;
+  color: #292B2E;
+  padding-top: 10px;
+}
+
+.choose-data-plan-row .item {
+  width: 100%;
+  max-width: 232px;
+  min-height: 144px;
+  display: block;
+  margin: auto;
+  padding: 19px 20px;
+  border-radius: 16px;
+  border: 1px solid #E4E6EA;
+  margin-bottom: 20px;
+}
+
+.choose-data-plan-row .item h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #292B2E;
+}
+
+.choose-data-plan-row .item p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #292B2E;
+  margin-bottom: 9px;
+}
+
+.choose-data-plan-row .item h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #292B2E;
+}
+
+ ul.first-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 50px;
+}
+
+.back-icon{
+  width: 100%;
+  margin: 10px;
+  text-align: left;
+}
+
+.back-button{
+  height: 3.5rem;
+  margin-left: 0px;
+  padding: 10px;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.back-button:hover{
+  background-color: #a0b9dc;
+}

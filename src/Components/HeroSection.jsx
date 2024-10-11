@@ -1,26 +1,8 @@
+
 import React from "react";
 import DestinationSearch from "./DestinationSearch";
-import axios from 'axios';
 
-const HeroSection = () => {
-  const selectCountry = async (country) => {
-    if (!country || !country.ISOCode) {
-        setError('Country ISOCode is missing');
-        setLoading(false);
-        return;
-      }
-      try {
-        const response = await axios.get(`http://161.202.168.83:8036/Data/PK`, {
-            headers: {
-              Authorization: 'Bearer dRlrlflbusTUwlsuPHlGuV6B',
-              'Access-Control-Allow-Origin': '*',
-            },
-          });
-          console.log('Response data:', response.data);
-      } catch (err) {
-        console.error(err)
-      }  
-}
+const HeroSection = ({countrySelection, toggle}) => {
 
   return (
     <section className="home-hero-sect">
@@ -50,7 +32,7 @@ const HeroSection = () => {
                   />
                 </div>
               </div> */}
-              <DestinationSearch SelectCountry={selectCountry} />
+              <DestinationSearch toggle={toggle} SelectCountry={countrySelection} />
             </div>
           </div>
           <div className="col-lg-7">

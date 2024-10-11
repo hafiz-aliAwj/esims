@@ -2,9 +2,7 @@
   "name": "esims",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "proxy": "http://161.202.168.83:8036",
-  "scripts": {
+  "type": "module",  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
