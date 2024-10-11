@@ -1,6 +1,345 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-hero-sect {
+  position: relative;
+  min-height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(215, 224, 238, 0.0472),
+      #a0b9dc 69.94%
+    ),
+    url(/assets/globe-bg-img.png);
+  background-position: left !important;
+  background-repeat: no-repeat;
+  background-size: auto 100% !important;
+  padding-top: 110px;
+}
+
+.home-hero-sect img.red-line-one {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  max-width: 370px;
+  z-index: 1;
+}
+
+.home-hero-sect .row {
+  align-items: center;
+}
+
+#col {
+  padding-right: 52px;
+}
+
+.h1-head {
+  font-size: 45px;
+  font-weight: 500;
+  color: #000;
+}
+
+.p-sty {
+  font-size: 17.68px;
+  font-weight: 400;
+  color: black;
+  line-height: 21px;
+}
+/* 
+.home-hero-sect .left .enter-destination-input-div {
+  width: 100%;
+  max-width: 365px;
+  border-radius: 40px;
+  position: relative;
+}
+
+.home-hero-sect .left .enter-destination-input-div input {
+  border-radius: 40px;
+  padding: 17px 10px 17px 40px;
+  border: none;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 3.75rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  background-clip: padding-box;
+  border: 2px solid #e2e2e2;
+  border-radius: 100px;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.location-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background-color: #37b1ff;
+  color: #FFFFFF;
+  padding: 10px 4px;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+} */
+
+/* Adjust container size and positioning */
+.home-hero-sect .left .enter-destination-input-div {
+  width: 100%;
+  max-width: 365px;
+  border-radius: 40px;
+  position: relative;
+  background-color: #f8f9fa; /* Add background color */
+  border: 1px solid #ddd; /* Slight border for better visibility */
+  padding: 5px; /* Inner padding for the div */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style the input field */
+.home-hero-sect .left .enter-destination-input-div input {
+  width: 100%;
+  padding: 17px 50px 17px 50px; /* Adjust padding for icons */
+  border-radius: 40px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Adjust form-control base style */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem; /* Adjust padding for a cleaner look */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333; /* Darker color for better readability */
+  background-color: #fff;
+  border: 2px solid #e2e2e2;
+  border-radius: 40px; /* Match the input radius */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #37b1ff; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(55, 177, 255, 0.5); /* Subtle shadow on focus */
+}
+
+/* Location icon adjustments */
+.location-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px; /* Adjust for padding */
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #666; /* Slightly lighter color for the icon */
+}
+
+/* Search icon adjustments */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust for padding */
+  transform: translateY(-50%);
+  background-color: #37b1ff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the icon perfectly */
+}
+
+/* Modify loading icon if used */
+.loading-icon {
+  animation: spin 1s linear infinite; /* Spinning animation */
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.home-hero-sect .right {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.home-hero-sect .right .google-reviews-btn {
+  background-color: #fff;
+  border-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  max-width: 180px;
+  transform: translateY(-250px);
+}
+
+.home-hero-sect .right .trustpilot-reviews-btn {
+  background-color: #fff;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  max-width: 180px;
+  position: relative;
+  z-index: 5;
+  transform: translateY(-50px);
+}
+
+.home-hero-sect .right img {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  z-index: 2;
+}
+
+.home-hero-sect .right .google-reviews-btn ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.home-hero-sect .right .google-reviews-btn ul li img {
+  width: 30px;
+  margin-right: 7px;
+}
+
+.home-hero-sect .right .google-reviews-btn .cont span {
+  display: block;
+  text-align: left;
+  line-height: 16px;
+}
+
+.home-hero-sect .right .google-reviews-btn .reviews {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.home-hero-sect .right .google-reviews-btn .g-text {
+  font-size: 13px;
+}
+
+.home-hero-sect .right img {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  z-index: 2;
+}
+
+.home-hero-sect .right .trustpilot-reviews-btn {
+  background-color: #fff;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  max-width: 180px;
+  position: relative;
+  z-index: 5;
+  transform: translateY(-50px);
+}
+
+.home-hero-sect .right .trustpilot-reviews-btn ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+.home-hero-sect .right .trustpilot-reviews-btn .cont span {
+  display: block;
+  text-align: left;
+  line-height: 16px;
+}
+
+.home-hero-sect .right .trustpilot-reviews-btn .reviews {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.home-hero-sect .right .trustpilot-reviews-btn .trust-text {
+  font-size: 13px;
+}
+
+.home-hero-sect .right .google-reviews-btn ul li img {
+  width: 30px;
+  margin-right: 7px;
+}
+
+.search-results {
+  max-height: 200px;
+  width: 365px;
+  margin: 10px 0;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: #0e91e3;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.search-results .result-box {
+  margin: 0;
+  height: 100%;
+}
+
+.search-result-item{
+  padding: 12px 15px;
+}
+
+.search-result-item:hover{
+  background-color: #37b1ff;
+}
+
+.destination-wrapper {
+  padding-bottom: 10px;
+}
+
+.search-results img {
+  width: 30px;
+  height: 15px;
+  margin-right: 10px;
 }
