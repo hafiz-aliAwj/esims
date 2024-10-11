@@ -13,6 +13,7 @@ const HeroSection = () => {
         const response = await axios.get(`http://161.202.168.83:8036/Data/PK`, {
             headers: {
               Authorization: 'Bearer dRlrlflbusTUwlsuPHlGuV6B',
+              'Access-Control-Allow-Origin': '*',
             },
           });
           console.log('Response data:', response.data);
